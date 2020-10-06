@@ -16,6 +16,7 @@ node {
             stage 'Test'
             sh 'go vet'
             sh 'go test -cover'
+            sh 'go test -cover1'            
             
             stage 'Build'
             sh 'go build .'
